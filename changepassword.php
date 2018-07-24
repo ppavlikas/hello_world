@@ -15,15 +15,15 @@
 		else{
 			include ("logo.php");
 				if($_SESSION["access"]==3)
-					include ("menuchangepassword.php");
+					include ("menu.php");
 					?>
           <br>
           <br>
         <p></p>
           <form action="changepass.php" method="post">
-          <label>Νέος κωδικός: </label><input name="newpass" type="password">
-          <br>
-          <input name="newpass1" type="submit" value="Αλλαγή Κωδικού">
+          <label>New Password: </label><input name="newpass" type="password">
+          
+          <input name="newpass1" type="submit" value="Change Password">
           </form>
           
         <?php            
