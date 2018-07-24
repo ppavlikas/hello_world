@@ -23,7 +23,7 @@
             <br>
             <br>
             <br>
-            <form action="result1.php" method="post">
+            <form action="addPayment.php" method="post">
             <label>Choose a student: </label><select name="students">
 			
 			<?php
@@ -44,6 +44,10 @@
             
             <p></p>
             <label>Receipt Number: </label><input name="receipt" type="text">
+            <p></p>
+            <label>Amount: </label><input name="amount" type="text">
+            <p></p>
+            <label>Date: </label><input name="rDate" type="date">
             <p></p>
             <input name="submit" type="submit" value="Add">
             

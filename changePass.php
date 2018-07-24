@@ -13,9 +13,12 @@
 	include ("dbconnection.php");
 	$hash = password_hash($pass, PASSWORD_DEFAULT);
 	$sql="Update users set password='".$hash."' where username='".$username."'";
-	include ("index1.php");
+	
 	$result = mysqli_query($myDB, $sql);
-	echo "<br><br>Η αλλαγή έγινε με επιτυχία";
+	echo "<script>
+alert('You changed your password');
+window.location.href='index1.php';
+</script>";
 ?>
 </body>
 </html>

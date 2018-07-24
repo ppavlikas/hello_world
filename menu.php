@@ -93,18 +93,22 @@
     <ul>
       <li><a href="new_student.php">New Student</a></li>
       <li><a href="search.php">Find a student</a></li>
-      <li><a href="new_payment.php">Payment</a></li>
-      <li><a href="new_payment.php">Timetable</a></li>
+      <li><a href="enrollStudents.php">Enroll Students</a></li>
+      <li><a href="new_payment.php">New Payment</a></li>
+      <li><a href="del_payment.php">Delete Payment</a></li>
+      <li><a href="timetable.php">Timetable</a></li>
       </ul>
    <li><a href="#">Administrator</a>
     <ul>
       <li><a href="manage_lessons.php">Manage Lessons</a></li>
       <li><a href="manage_teachers.php">Manage Teachers</a></li>
       <li><a href="manage_classes.php">Manage Classes</a></li>
+      
+      
       </ul>
    <li><a href="#">Reports</a>
     <ul>
-      <li><a href="manage_lessons.php">Classes</a></li>
+      <li><a href="classreport.php">Classes</a></li>
       <li><a href="manage_teachers.php">Payments</a></li>
       </ul>
   <li><a href="changepassword.php">Change Password</a></li>

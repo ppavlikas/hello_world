@@ -19,7 +19,7 @@
 			include ("dbconnection.php");
 			
 				if($_SESSION["access"]==3)
-					include ("menutasks.php"); 
+					include ("menu.php"); 
 			
 			$student_id=$_POST['student'];
 			$sql="Select * from students where id=".$student_id;
@@ -29,6 +29,7 @@
             echo "<br><br><form action='addstudent.php' method='post'>";
             echo "<table border='1px' cellpadding='10' bordercolor=#0dd ><tr><td >";
             echo "<label>Ονοματεπώνυμο Μαθητή: </label><input size=60 name='onoma' type='text' value='".$row['onoma']."'>";
+			$onomaS=$row['onoma'];
 			?>
 		
             <p></p><?php
@@ -99,9 +100,17 @@
             
            </table>
          <br>
-            <input name="submit" type="submit" value="Update">
+         <table><tr><td>
+            <input name="submit" type="submit" value="Update"></td>
              
 </form>
+<td>
+<form action="DeleteConfSt.php" method="post">
+<input name="id" type="hidden" value="<?php echo $student_id;?>">
+<input name="onomaS" type="hidden" value="<?php echo $onomaS;?>">
+<input name="Delete" type="submit" value="Delete">
+</form>
+</td></tr></tr>
                    <?php
 			
 		}?>
